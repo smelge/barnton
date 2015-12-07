@@ -1,6 +1,6 @@
 <?php
-	$admin_username = "1a6ff07ec8680a37cb0757d2af8adf4d";
-	$admin_password = "5ec293ac4711f9f03f71d9862d56e3ca";
+	$admin_username = "";
+	$admin_password = "";
 	
 	$input_username = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
 	$input_password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
