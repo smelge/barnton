@@ -1,0 +1,72 @@
+Barnton Database Configurations
+
+====================================
+=         barnton_config           =
+====================================
+
+username: barnton_admin
+password: turnhouse
+
+====================================
+=         barnton_config           =
+====================================
+
+Used to deactivate sections of the site
+
+id - integer (Auto-increment)
+page
+	example
+		index.php
+		gallery.php
+status
+	0 - Online
+	1 - Offline for work
+	2 - Deactivated, removed from menu
+
+====================================
+=         barnton_images           =
+====================================
+
+Stores paths and locations of all images in gallery
+
+id - integer (Auto-increment)
+path (assets/gallery/..)
+	example
+		lower_corridor_1.jpg
+modal
+	Same as path with filetype removed. Used for modal names.
+state
+	0 - In use
+	1 - Awaiting deletion
+location
+	0 - Uploaded but unassigned to gallery location
+	1 - In Old section of gallery
+	2 - In Refurbishment section of gallery
+	3 - In Finished section of gallery
+alt-text
+	example
+		A picture of the lower access corridor
+description
+	Description of image or content to be displayed under image
+
+====================================
+=        barnton_volunteer         =
+====================================
+
+Populates volunteer page
+
+id - integer (Auto-increment)
+importance
+	Order volunteers appear on page. 0 = first.
+display
+	0 - Shown on site
+	1 - Hidden
+job_title
+	If volunteer has a job title
+volunteer_name
+volunteer_image (assets/volunteers/..)
+	example
+		volunteer1.jpg
+volunteer_description
+	example
+		John beats up trees with his fist. He is Head of Department for Foliage Discouragement.
